@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>GymFit - Planos</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background-color: #0800a2; color: #ffffff; line-height: 1.6; }
+        header { background-color: #0003b3; padding: 20px 50px; display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #003cff; }
+        .logo { font-size: 28px; font-weight: bold; color: #00e5ff; text-transform: uppercase; }
+        nav a { color: #ffffff; text-decoration: none; margin-left: 20px; font-weight: 500; }
+        nav a:hover, nav a.active { color: #00bbff; }
+        .container { max-width: 900px; margin: 40px auto; padding: 20px; text-align: center; }
+        h1 { margin-bottom: 30px; }
+        .grid-planos { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+        .plano-box { background: #1e1e1e; padding: 30px; border-radius: 8px; border: 1px solid #003cff; }
+        .plano-box h3 { color: #00e5ff; margin-bottom: 15px; font-size: 24px; }
+        .preco { font-size: 28px; font-weight: bold; margin-bottom: 20px; color: #fff; }
+        .btn-assinar { background: #00e5ff; color: #000; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; font-weight: bold; width: 100%; }
+        .btn-assinar:hover { background: #0047c1; color: #fff; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">GymFit</div>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="planos.html" class="active">Planos</a>
+            <a href="aulas.html">Agendar Aulas</a>
+            <a href="login.html">Área do Aluno</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Nossos Planos</h1>
+        <div class="grid-planos">
+            <div class="plano-box">
+                <h3>Plano Mensal</h3>
+                <div class="preco">R$ 99/mês</div>
+                <p>Acesso livre à musculação e aeróbicos em horário comercial.</p>
+                <button class="btn-assinar" id="btn-plano-mensal">Assinar Mensal</button>
+            </div>
+            <div class="plano-box">
+                <h3>Plano VIP</h3>
+                <div class="preco">R$ 149/mês</div>
+                <p>Acesso total 24h, aulas coletivas inclusas e acompanhamento nutricional.</p>
+                <button class="btn-assinar" id="btn-plano-vip">Assinar VIP</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
